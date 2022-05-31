@@ -6,21 +6,18 @@ using System.Threading.Tasks;
 
 namespace ProductCatalogue
 {
-    internal class Shirts : Product
+    internal class Shirt: Product
     {
-
-        // Properties unique to Shirts.cs
         public string Gender;
 
-        public Shirts(string productName, double price, string brand, string colour, string gender)
+        public Shirt(string productName, double price, string brand, string colour, string gender)
         {
             ProductName = productName;
             Price = price;
             Brand = brand;
             Colour = colour;
-            Gender = gender;    
+            Gender = gender;
         }
-
         public override string ToString()
         {
             return

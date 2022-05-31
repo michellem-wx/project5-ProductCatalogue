@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
-//TEST
-
-
 namespace ProductCatalogue 
 {
     internal class Program
