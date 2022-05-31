@@ -22,7 +22,7 @@ namespace ProductCatalogue
             Occasion = occasion;
         }
 
-        //Q. Should we be using all properties of the abstract class?
+        //Q. Should we be using all properties of the abstract class? 
 
         public override string ToString()
         {

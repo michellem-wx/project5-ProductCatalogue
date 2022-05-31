@@ -8,7 +8,7 @@ namespace ProductCatalogue
 {
     // Derived class:
     // It will inherit from Properties
-    internal class Bags : Product
+    internal class Bag : Product
     {
 
         // Properties unique to Bags.cs
@@ -19,7 +19,7 @@ namespace ProductCatalogue
 
         // Constructor for Bags
         // Used to create instances of Bags
-        public Bags(string productName, double price, string brand, string colour, int width, int height, int depth, string category)
+        public Bag(string productName, double price, string brand, string colour, int width, int height, int depth, string category)
         {
             ProductName = productName;
             Price = price;
@@ -31,7 +31,6 @@ namespace ProductCatalogue
             BagCategory = category;
         }
 
-        
         public override string ToString()
         {
             return
