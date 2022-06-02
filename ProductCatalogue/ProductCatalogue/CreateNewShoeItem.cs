@@ -9,7 +9,7 @@ namespace ProductCatalogue
     public class CreateNewShoeItem
     {
 
-        public static void CreateNewShoe()
+        public static Shoe CreateNewShoe()
         {
             Console.WriteLine("== NEW SHOE ITEM ==");
             Console.WriteLine("Add in the product name:");
@@ -27,7 +27,7 @@ namespace ProductCatalogue
             Console.WriteLine("Add in shoe size:");
             int size = Convert.ToInt32(Console.ReadLine());
 
-            Shoe.CreateAShoe(productName, price, brand, colour, size);
+            return new Shoe(productName, price, brand, colour, size);
         }
     }
 }

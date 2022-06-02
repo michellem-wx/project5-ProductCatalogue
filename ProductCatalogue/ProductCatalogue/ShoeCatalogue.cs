@@ -8,15 +8,20 @@ namespace ProductCatalogue
 {
     public class ShoeCatalogue
     {
+        //Catalogue<Bag> bagCatalogue = new Catalogue<Bag>();
+        Catalogue<Shoe> shoeCatalogue = new Catalogue<Shoe>();
 
-        //Catalogue<Shoe> shoeCatalogue = new Catalogue<Shoe>();
+        public void ViewShoeCatalogue()
+        {
+            if (shoeCatalogue.DigitalCatalogue.Count == 0)
+            {
+                Console.WriteLine("Shoe catalogue is empty");
+            }
+            foreach (Shoe item in shoeCatalogue.DigitalCatalogue)
+            {
+                Console.WriteLine(item.ProductName);
+            }
+        }
 
-        //public static void ViewShoeCatalogue()
-        //{
-        //    foreach (Shoe item in shoeCatalogue.DigitalCatalogue)
-        //    {
-        //        Console.WriteLine(item.ProductName);
-        //    }
-        //}
     }
 }

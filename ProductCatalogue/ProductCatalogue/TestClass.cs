@@ -45,7 +45,7 @@ namespace ProductCatalogue
                 Console.WriteLine("Add in category:");
                 string category = Console.ReadLine();
 
-                Bag.CreateABag(productName, price, brand, colour, width, height, depth, category);
+                //Bag.CreateABag(productName, price, brand, colour, width, height, depth, category);
 
                 // add in the bag function here
                 //Shoe newItem = new Shoe(productName, price, brand, colour, gender);

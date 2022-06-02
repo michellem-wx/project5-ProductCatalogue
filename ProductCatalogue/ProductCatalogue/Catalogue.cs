@@ -21,6 +21,8 @@ namespace ProductCatalogue
         // Properties of a catalogue
         // Declaring: the type is List, variable name is Digital catalogue, and it is creating a new (generic) list
 
+        // Define a public property which is a list
+        // DigitalCatalogue variable is holding the instance of product via the AddProduct()
         public List<T> DigitalCatalogue = new List<T>();
 
         //Constructor of catalogue
@@ -35,8 +37,52 @@ namespace ProductCatalogue
         {
             DigitalCatalogue.Add(product);
         }
+
+        // You have to specify which product
+        // ask user which PRODUCT NAME 
+        // remove product needs to take in the product name as parameter
+
+        public void RemoveProduct(string productName)
+        {
+            // Assumming its not there (-1 is your invalid index number)
+            int itemToRemoveIndex = -1;
+
+            for (int i = 0; i < DigitalCatalogue.Count; i++)
+            {
+                if (DigitalCatalogue[i].ProductName == productName)
+                {
+                    itemToRemoveIndex = i; // i represents the index of the product (i.e.ProductName)
+                    break;
+                }
+            }
+
+            if (itemToRemoveIndex == -1)
+            {
+
+            }
+            else
+            {
+            DigitalCatalogue.RemoveAt(itemToRemoveIndex);
+
+            }
+        }
     }
 }
+
+
+
+            //(T product in DigitalCatalogue)
+            //{
+            //    if(product.ProductName == productName)
+            //    {
+
+            //        // find index
+
+
+            //        DigitalCatalogue.RemoveAt(product);
+            //    }
+            //}
+            //DigitalCatalogue.Remove(product);
         // Create a method to dynamically add items into the list
         //public void Run()
         //{

@@ -7,15 +7,15 @@ namespace ProductCatalogue
     {
         static void Main(string[] args)
         {
-
+            Menu menu = new Menu();
+            menu.selectOptionFromMenu();
+            
 
             #region Pseudo coding
             // PSEUDO CODING:
             // Display menu options for user to select an option:
 
-            Menu menu = new Menu();
-            menu.displayMenuOptions(); //this would be a method
-            menu.selectOptionFromMenu();
+            //menu.displayMenuOptions(); //this would be a method
 
             // If the user selects 1 (create new product) THEN invoke 'createNewProduct' method
 
@@ -61,5 +61,3 @@ namespace ProductCatalogue
     }
 }
 
-
-//Questions for later:

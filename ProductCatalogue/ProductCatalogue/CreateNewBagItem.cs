@@ -8,7 +8,10 @@ namespace ProductCatalogue
 {
     public class CreateNewBagItem
     {
-        public static void CreateNewBag()
+        // void won't return
+        // we need to state BAG because it is the object we are using on this method
+        // use this class to create a new BAG ITEM
+        public static Bag CreateNewBag()
         {
             // string userInput;
             //bool addProduct = false;
@@ -44,15 +47,16 @@ namespace ProductCatalogue
             Console.WriteLine("Add in category(cm):");
             string category = Console.ReadLine();
 
-            // this is using the Create a BAG constructor
-            Bag.CreateABag(productName, price, brand, colour, width,height, depth, category);
+            // this is returning the BAG OBJECT, this is the result of the method
+            return new Bag(productName, price, brand, colour, width, height, depth, category);
 
+            // storing the new bag created
 
-                // QUESTION: HOW DO I SAVE THIS TO THE LIST
+            // QUESTION: HOW DO I SAVE THIS TO THE LIST
 
-                // add in the bag function here
-                //Shoe newItem = new Shoe(productName, price, brand, colour, gender);
-                //break;
+            // add in the bag function here
+            //Shoe newItem = new Shoe(productName, price, brand, colour, gender);
+            //break;
 
             //}
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalogue
 {
-    internal class Shoe : Product
+    public class Shoe : Product
     {
         public int ShoeSize;
 
@@ -20,12 +20,12 @@ namespace ProductCatalogue
         }
 
         // Create a method that uses the constructor Shoe
-        public static Shoe CreateAShoe(string productName, double price, string brand, string colour, int size)
-        {
-            Shoe shoeItem = new Shoe(productName, price, brand, colour, size);
+        //public static Shoe CreateAShoe(string productName, double price, string brand, string colour, int size)
+        //{
+        //    Shoe shoeItem = new Shoe(productName, price, brand, colour, size);
 
-            return shoeItem;
-        }
+        //    return shoeItem;
+        //}
 
         public override string ToString()
         {
