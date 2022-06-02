@@ -24,6 +24,16 @@ namespace ProductCatalogue
             DepthDimension = depth;
             BagCategory = category;
         }
+
+        // Create a method that uses the constructor Bag
+        public static Bag CreateABag(string productName, double price, string brand, string colour, int width, int height, int depth, string category)
+        {
+            Bag bagItem = new Bag(productName, price, brand, colour, width, height, depth, category);
+
+            return bagItem;
+        }
+
+
         public override string ToString()
         {
             return

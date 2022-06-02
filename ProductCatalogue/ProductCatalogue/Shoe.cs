@@ -8,15 +8,23 @@ namespace ProductCatalogue
 {
     internal class Shoe : Product
     {
-        public string Occasion;
+        public int ShoeSize;
 
-        public Shoe(string productName, double price, string brand, string colour, string occasion)
+        public Shoe(string productName, double price, string brand, string colour, int size)
         {
             ProductName = productName;
             Price = price;
             Brand = brand;
             Colour = colour;
-            Occasion = occasion;
+            ShoeSize = size;
+        }
+
+        // Create a method that uses the constructor Shoe
+        public static Shoe CreateAShoe(string productName, double price, string brand, string colour, int size)
+        {
+            Shoe shoeItem = new Shoe(productName, price, brand, colour, size);
+
+            return shoeItem;
         }
 
         public override string ToString()
@@ -26,7 +34,7 @@ namespace ProductCatalogue
                 $"Price: ${Price}\n" +
                 $"Brand: {Brand}\n" +
                 $"Colour: {Colour}\n" +
-                $"Occasion: {Occasion}\n\n\n";
+                $"Size: {ShoeSize}\n\n\n";
         }
 
     }

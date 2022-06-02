@@ -7,56 +7,59 @@ namespace ProductCatalogue
     {
         static void Main(string[] args)
         {
-            Bags gymBag = new Bags("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
-            gymBag.CalculateTax(gymBag.Price);
-            Console.WriteLine(gymBag);
 
 
-            // bag objects:
-            var handbag = new Bag("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
-            var travelBag = new Bag("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
-            var heels = new Shoes("heels", 30, "LV", "black", "party");
+            #region Pseudo coding
+            // PSEUDO CODING:
+            // Display menu options for user to select an option:
+
+            Menu menu = new Menu();
+            menu.displayMenuOptions(); //this would be a method
+            menu.selectOptionFromMenu();
+
+            // If the user selects 1 (create new product) THEN invoke 'createNewProduct' method
+
+            // If the user selects 2 (view a catalogue) THEN invoke 'displayProductCatalogue' method
 
 
-            // THIS IS CREATING A NEW CATALOGUE CALLED SHIRTS
-            Catalogue<Product> shirtsCatalogue = new Catalogue<Product>();
 
-            // FOR EACH LOOP TO GO THROUGH THE SHIRTS CATALOGUE
+            //CreateNewBagItem.CreateNewBag();
 
-            //For every item in Shirts in shirt catalogue list
-            // shirt catalogue class and going into the catalogue list
-            foreach (Product item in shirtsCatalogue.DigitalCatalogue)
-            {
-                Console.WriteLine(item.ProductName);
-            }
+            // If the user selects 3 (Add a product to a catalogue) THEN invoke 'removeProductFromCatalogue' method
 
-            // this is the new catalogue, has to be the same <t> (type)
+            // If the user selects 4 (remove a catalogue) THEN invoke 'removeCatalogue' method
 
-/*            //YAO:
-            var bagsCatalogue = new Catalogue<Product>();
+            // ELSE remain on display menu screen 
+            #endregion
 
-            // add get and set
-            // AddProduct is our method
-            // bagsCatalogue 
-            bagsCatalogue.AddProduct(heels);
-            bagsCatalogue.AddProduct(gymBag);
-            bagsCatalogue.AddProduct(travelBag);
-            bagsCatalogue.AddProduct(handbag);*/
+            #region OG notes
+            //Bag gymBag = new Bag("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
+            //gymBag.CalculateTax(gymBag.Price);
+            //Console.WriteLine(gymBag);
 
-            // YAO
-            // Bags = Class: Bags
-            // bags = variable
-            // bagsCatalogue = the new catalogue you created
-            // DigitalCatalogue = is the List storing the Products
-            //foreach (Product item in bagsCatalogue.DigitalCatalogue)
+            //// bag objects:
+            //Bag handbag = new Bag("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
+            //Bag travelBag = new Bag("Black medium gym bag", 33, "Nike", "Black", 30, 60, 20, "Gym");
+            //Shoe heels = new Shoe("heels", 30, "LV", "black", "party");
+
+
+            //// THIS IS CREATING A NEW CATALOGUE CALLED SHIRTS
+            //Catalogue<Product> shirtsCatalogue = new Catalogue<Product>();
+
+            //// FOR EACH LOOP TO GO THROUGH THE SHIRTS CATALOGUE
+
+            ////For every item in Shirts in shirt catalogue list
+            //// shirt catalogue class and going into the catalogue list
+            //foreach (Product item in shirtsCatalogue.DigitalCatalogue)
             //{
-            //    Console.WriteLine(item);
-
+            //    Console.WriteLine(item.ProductName);
             //}
 
-            
-
+            #endregion
 
         }
     }
 }
+
+
+//Questions for later:
