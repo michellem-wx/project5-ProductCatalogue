@@ -7,6 +7,7 @@ namespace ProductCatalogue
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("PRODUCT DATA LIBRARY");
             Menu menu = new Menu();
             menu.selectOptionFromMenu();
             

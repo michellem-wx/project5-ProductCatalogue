@@ -23,6 +23,7 @@ namespace ProductCatalogue
 
         // Define a public property which is a list
         // DigitalCatalogue variable is holding the instance of product via the AddProduct()
+
         public List<T> DigitalCatalogue = new List<T>();
 
         //Constructor of catalogue
@@ -36,6 +37,7 @@ namespace ProductCatalogue
         public void AddProduct(T product)
         {
             DigitalCatalogue.Add(product);
+
         }
 
         // You have to specify which product
@@ -65,6 +67,11 @@ namespace ProductCatalogue
             DigitalCatalogue.RemoveAt(itemToRemoveIndex);
 
             }
+        }
+
+        public void ClearAllProducts()
+        {
+            DigitalCatalogue.Clear();
         }
     }
 }

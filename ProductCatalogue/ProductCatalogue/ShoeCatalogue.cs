@@ -8,7 +8,7 @@ namespace ProductCatalogue
 {
     public class ShoeCatalogue
     {
-        //Catalogue<Bag> bagCatalogue = new Catalogue<Bag>();
+        Catalogue<Bag> bagCatalogue = new Catalogue<Bag>();
         Catalogue<Shoe> shoeCatalogue = new Catalogue<Shoe>();
 
         public void ViewShoeCatalogue()

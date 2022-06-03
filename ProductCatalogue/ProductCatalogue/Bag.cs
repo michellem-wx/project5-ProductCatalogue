@@ -8,21 +8,16 @@ namespace ProductCatalogue
 {
     public class Bag : Product
     {
-        public int WidthDimension;
-        public int HeightDimension;
-        public int DepthDimension;
         public string BagCategory;
+
         
         // Constructor is already creating an instance of the bag (you can return this)
-        public Bag(string productName, double price, string brand, string colour, int width, int height, int depth, string category)
+        public Bag(string productName, double price, string brand, string colour, string category)
         {
             ProductName = productName;
             Price = price;
             Brand = brand;
             Colour = colour;
-            WidthDimension = width;
-            HeightDimension = height;
-            DepthDimension = depth;
             BagCategory = category;
         }
 
@@ -42,9 +37,6 @@ namespace ProductCatalogue
                 $"Price: ${Price}\n" +
                 $"Brand: {Brand}\n" +
                 $"Colour: {Colour}\n" +
-                $"Width: ${WidthDimension}\n" +
-                $"Height: {HeightDimension}\n" +
-                $"Depth: {DepthDimension}\n" +
                 $"Category: {BagCategory}\n\n\n";
         }
     }

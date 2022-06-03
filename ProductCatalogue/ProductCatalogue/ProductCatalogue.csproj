@@ -7,4 +7,10 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Shirt.cs" />
+    <Compile Remove="ShoeCatalogue.cs" />
+    <Compile Remove="TestClass.cs" />
+  </ItemGroup>
+
 </Project>
